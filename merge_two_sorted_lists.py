@@ -14,11 +14,3 @@ class Solution:
         else:
             list2.next = self.merge_two_list(list1, list2.next)
             return list2
-
-def main():
-    s = Solution()
-    r = s.merge_two_list([1,1,2,3], [1,3,4,5])
-    print(r)
-
-if __name__ == "__main__":
-    main()
