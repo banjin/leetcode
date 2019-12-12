@@ -12,7 +12,7 @@ class Solution:
         for i, v in enumerate(nums):
             if target - v in temp_dict:
                 temp_dict[target-v] = nums.index(target-v)
-                return [i, nums.index(target-v)]
+                return [i, temp_dict[target-v]]
             else:
                 temp_dict[v] = i
 
