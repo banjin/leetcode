@@ -23,3 +23,37 @@ def BFS(graph, start, end):
         ...
 
 ```
+
+
+```python
+
+class Solution(object):
+    def levelorder(self, root):
+        if not root:
+            return []
+        result = []
+        queue = collections.deque()
+        queue.append(root)
+
+        # visited = set(root)
+
+        while queue:
+            level_sie = len(queue)
+            current_level = []
+
+            for _ in range(level_size):
+                node = queue.popleft()
+                currnet_level.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.addend(node.right)
+            result.append(current_level)
+
+        return rusult
+
+
+
+
+
+```
